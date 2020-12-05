@@ -89,10 +89,14 @@ function App() {
         />
       </div>
 
-      <div className="row bg-dark rounded p-3 my-5 text-light d-flex justify-content-center">
-        <div className="col-xs-4 m-3">{clockify().clockifiedHours} Hours</div>
-        <div className="col-xs-4 m-3">{clockify().clockifiedMins} Mins</div>
-        <div className="col-xs-4 m-3">{clockify().clockifiedSeconds} Secs</div>
+      <div id="clock">
+        <div className="row bg-dark rounded p-3 my-5 text-light d-flex justify-content-center">
+          <div className="col-xs-4 m-3">{clockify().clockifiedHours} Hours</div>
+          <div className="col-xs-4 m-3">{clockify().clockifiedMins} Mins</div>
+          <div className="col-xs-4 m-3">
+            {clockify().clockifiedSeconds} Secs
+          </div>
+        </div>
       </div>
 
       <div className="row py-4 d-flex justify-content-center">
