@@ -4,6 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  background-image: linear-gradient(#ddd, #aaa);
 }
 
 .time-btn {
@@ -20,6 +21,6 @@ body {
 @keyframes slide-in {
   0% {
     padding: 50px;
-    background-color: rgb(16, 92, 6);
+    background-color: rgb(46, 56, 45);
   }
 }
