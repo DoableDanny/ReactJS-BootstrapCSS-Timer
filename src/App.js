@@ -105,12 +105,12 @@ function App() {
             className="btn btn-success btn-block"
             onClick={() => setTimerOn(!timerOn)}
           >
-            Play/Pause
+            <i className="fas fa-play"></i> <i className="fas fa-pause"></i>
           </button>
         </div>
         <div className="col-xs-4 mx-3">
-          <button className="btn btn-success btn-block" onClick={() => reset()}>
-            Reset
+          <button className="btn btn-success" onClick={() => reset()}>
+            <i className="fas fa-undo"></i>
           </button>
         </div>
       </div>
