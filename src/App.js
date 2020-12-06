@@ -1,4 +1,6 @@
 import { useState, useRef, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faPause, faUndo } from "@fortawesome/free-solid-svg-icons";
 import TimeController from "./components/TimeController";
 import "./App.css";
 
@@ -105,12 +107,12 @@ function App() {
             className="btn btn-success btn-block"
             onClick={() => setTimerOn(!timerOn)}
           >
-            <i className="fas fa-play"></i> <i className="fas fa-pause"></i>
+            <FontAwesomeIcon icon={faPlay} /> <FontAwesomeIcon icon={faPause} />
           </button>
         </div>
         <div className="col-xs-4 mx-3">
           <button className="btn btn-success" onClick={() => reset()}>
-            <i className="fas fa-undo"></i>
+            <FontAwesomeIcon icon={faUndo} />
           </button>
         </div>
       </div>
