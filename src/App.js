@@ -102,7 +102,7 @@ function App() {
       </div>
 
       <div className="row py-4 d-flex justify-content-center">
-        <div className="col-xs-8 mx-3">
+        <div className="col-8">
           <button
             className="btn btn-success btn-block"
             onClick={() => setTimerOn(!timerOn)}
@@ -110,8 +110,8 @@ function App() {
             <FontAwesomeIcon icon={faPlay} /> <FontAwesomeIcon icon={faPause} />
           </button>
         </div>
-        <div className="col-xs-4 mx-3">
-          <button className="btn btn-success" onClick={() => reset()}>
+        <div className="col-4">
+          <button className="btn btn-success btn-block" onClick={() => reset()}>
             <FontAwesomeIcon icon={faUndo} />
           </button>
         </div>
